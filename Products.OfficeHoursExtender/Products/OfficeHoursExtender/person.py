@@ -41,10 +41,10 @@ class PersonExtender(object):
            _StringExtensionField('quarter',
                 required=False,
                 searchable=True,
-                schemata="Office Hours",
+                schemata="Contact Information",
                 widget=StringWidget(
                     label=_(u"FSDOfficeHoursExtender_label_Quarter", default=u"Quarter"),
-                    description=_(u"FSDOfficeHoursExtender_description_Quarter", default=u"Quarter and year, aka Fall 2012"),
+                    description=_(u"FSDOfficeHoursExtender_description_Quarter", default=u"Please update through your admin site"),
                     i18n_domain='FSDOfficeHoursExtender',
                  ),
               ),
@@ -53,10 +53,10 @@ class PersonExtender(object):
             _LinesExtensionField('officeHours',
                 required=False,
                 searchable=True,
-                schemata="Office Hours",
+                schemata="Contact Information",
                 widget=LinesWidget(
                     label=_(u"FSDOfficeHoursExtender_label_OfficeHours", default=u"Office Hours"),
-                    description=_(u"FSDOfficeHoursExtender_description_OfficeHours", default=u"One entry per line, aka Tuesday 8:00am - 10:00 am"),
+                    description=_(u"FSDOfficeHoursExtender_description_OfficeHours", default=u"Please update through your admin site"),
                     i18n_domain='FSDOfficeHoursExtender',
                 )
             )
